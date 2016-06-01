@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RoundedLayout">
+        <attr name="rounded_type" format="enum">
+            <enum name="circle" value="0"/>
+            <enum name="rectangle" value="1"/>
+        </attr>
+        <attr name="rounding_radius" format="dimension"/>
+    </declare-styleable>
+    <!--<declare-styleable name="RoundedLayout">-->
+        <!--<attr name="rounded_type" format="enum">-->
+            <!--<enum name="cicle" value="0"/>-->
+            <!--<enum name="rectangle" value="1"/>-->
+        <!--</attr>-->
+        <!--<attr name="rounding_radius" format="dimension"/>-->
+    <!--</declare-styleable>-->
+</resources>

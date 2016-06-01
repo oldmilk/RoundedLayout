@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="psn.oldmilk.roundedlayout.demo.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <psn.oldmilk.roundedlayout.RoundedRelativeLayout
+            xmlns:roundedlayout="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#AF5601"
+            roundedlayout:rounded_type="circle">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:text="I am inside a Circle RoundedRelativeLayout" />
+
+        </psn.oldmilk.roundedlayout.RoundedRelativeLayout>
+
+        <psn.oldmilk.roundedlayout.RoundedRelativeLayout
+            xmlns:roundedlayout="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#AF5601"
+            roundedlayout:rounded_type="rectangle"
+            roundedlayout:rounding_radius="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:text="I am inside a Circle RoundedRelativeLayout" />
+
+        </psn.oldmilk.roundedlayout.RoundedRelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+</android.support.v4.widget.NestedScrollView>
