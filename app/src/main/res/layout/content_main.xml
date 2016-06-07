@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="psn.oldmilk.roundedlayout.demo.MainActivity"
+    tools:context="psn.oldmilk.layout.demo.MainActivity"
     tools:showIn="@layout/activity_main">
 
     <LinearLayout
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <psn.oldmilk.roundedlayout.RoundedRelativeLayout
+        <psn.oldmilk.layout.RoundedRelativeLayout
             xmlns:roundedlayout="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -26,9 +26,9 @@
                 android:layout_margin="@dimen/text_margin"
                 android:text="I am inside a Circle RoundedRelativeLayout" />
 
-        </psn.oldmilk.roundedlayout.RoundedRelativeLayout>
+        </psn.oldmilk.layout.RoundedRelativeLayout>
 
-        <psn.oldmilk.roundedlayout.RoundedRelativeLayout
+        <psn.oldmilk.layout.RoundedRelativeLayout
             xmlns:roundedlayout="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
                 android:layout_margin="@dimen/text_margin"
                 android:text="I am inside a Circle RoundedRelativeLayout" />
 
-        </psn.oldmilk.roundedlayout.RoundedRelativeLayout>
+        </psn.oldmilk.layout.RoundedRelativeLayout>
 
     </LinearLayout>
 

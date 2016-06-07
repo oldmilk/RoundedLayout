@@ -1,4 +1,4 @@
-package psn.oldmilk.roundedlayout;
+package psn.oldmilk.layout;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -8,12 +8,12 @@ import android.graphics.Path;
 import android.graphics.RectF;
 import android.os.Build;
 import android.util.AttributeSet;
-import android.widget.RelativeLayout;
+import android.widget.LinearLayout;
 
 /**
  * Created by CarlChia on 1/6/16.
  */
-public class RoundedRelativeLayout extends RelativeLayout {
+public class RoundedLinearLayout extends LinearLayout {
 
     public static final int ROUNDEDTYPE_CIRCLE = 0;
     public static final int ROUNDEDTYPE_RECTANGLE = 1;
@@ -23,23 +23,23 @@ public class RoundedRelativeLayout extends RelativeLayout {
 
     private Path mPath;
 
-    public RoundedRelativeLayout(Context context) {
+    public RoundedLinearLayout(Context context) {
         super(context);
         init(context, null);
     }
 
-    public RoundedRelativeLayout(Context context, AttributeSet attrs) {
+    public RoundedLinearLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context, attrs);
     }
 
-    public RoundedRelativeLayout(Context context, AttributeSet attrs, int defStyleAttr) {
+    public RoundedLinearLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(context, attrs);
     }
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    public RoundedRelativeLayout(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public RoundedLinearLayout(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
         init(context, attrs);
     }
@@ -79,8 +79,7 @@ public class RoundedRelativeLayout extends RelativeLayout {
             mPath = new Path();
             mPath.addRoundRect(r, ROUNDING_RADIUS, ROUNDING_RADIUS, Path.Direction.CW);
             mPath.close();
-        }
-        else if(ROUNDED_TYPE == ROUNDEDTYPE_CIRCLE){
+        }else if(ROUNDED_TYPE == ROUNDEDTYPE_CIRCLE){
 
             float halfWidth = w / 2f;
             float halfHeight = h / 2f;

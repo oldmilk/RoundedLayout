@@ -1,4 +1,4 @@
-package psn.oldmilk.roundedlayout.demo;
+package psn.oldmilk.layout.demo;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;

@@ -1,4 +1,4 @@
-package psn.oldmilk.roundedlayout.demo;
+package psn.oldmilk.layout;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

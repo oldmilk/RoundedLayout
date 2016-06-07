@@ -1,4 +1,4 @@
-package psn.oldmilk.roundedlayout.demo;
+package psn.oldmilk.layout.demo;
 
 import org.junit.Test;
 

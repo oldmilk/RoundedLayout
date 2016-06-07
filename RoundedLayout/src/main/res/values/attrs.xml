@@ -8,6 +8,15 @@
         </attr>
         <attr name="rounding_radius" format="dimension"/>
     </declare-styleable>
+
+    <declare-styleable name="ShadowLayout">
+        <attr name="cornerRadius" format="dimension"/>
+        <attr name="shadowRadius" format="dimension"/>
+        <attr name="shadowColor" format="color"/>
+        <attr name="dx" format="dimension"/>
+        <attr name="dy" format="dimension"/>
+    </declare-styleable>
+
     <!--<declare-styleable name="RoundedLayout">-->
         <!--<attr name="rounded_type" format="enum">-->
             <!--<enum name="cicle" value="0"/>-->
